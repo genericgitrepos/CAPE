@@ -37,19 +37,6 @@ CAPE performs the following:
 
 ---
 
-## 🔁 Reproducing Results
-
-To reproduce the experiments and plots from the paper:
-
-1. After activating the conda environment, navigate to the `evaluation/` directory.
-2. Open the relevant Jupyter notebooks (e.g., `mlp_eval.ipynb`, `transformer_eval.ipynb`).
-3. Make sure the `reuse` flag is set to `True` in the notebook cells.
-4. Run the notebook to see results and visualizations directly.
-
-> These notebooks will load the pre-generated meta-datasets and replay evaluations without repeating the heavy computations.
-
----
-
 ## 📁 Repository Structure
 
 ```
@@ -104,6 +91,19 @@ python meta_dataset_generators/generate.py --model {model-name} --save_dir {dir-
 | `logLR`     | log(Learning rate)                   |
 | `logN`      | log(Dataset size)                    |
 | `T_star`    | Actual steps to convergence          |
+
+---
+
+## 🔁 Reproducing Results
+
+To reproduce the experiments and plots from the paper:
+
+1. After activating the conda environment, navigate to the `evaluation/` directory.
+2. Open the relevant Jupyter notebooks (e.g., `mlp_eval.ipynb`, `transformer_eval.ipynb`).
+3. Make sure the `reuse` flag is set to `True` in the notebook cells.
+4. Run the notebook to see results and visualizations directly.
+
+> These notebooks will load the pre-generated meta-datasets and replay evaluations without repeating the heavy computations.
 
 ---
 
